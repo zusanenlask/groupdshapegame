@@ -5,12 +5,15 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     private Rigidbody2D body;
+    private Animator anim;
     [SerializeField] private float speed;
     private bool grounded;
+    private float horizontalInput;
     // Start is called before the first frame update
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
         speed = 10;
         grounded = false;
     }
@@ -18,19 +21,22 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        body.velocity = new Vector2(Input.GetAxis("Horizontal")*speed,body.velocity.y);
+        horizontalInput = Input.GetAxis("Horizontal");
+        body.velocity = new Vector2(horizontalInput * speed,body.velocity.y);
         if (Input.GetKeyDown(KeyCode.Space)) {
             body.velocity = new Vector2(body.velocity.x, speed);
             grounded = false;
         }
-        if (Input.GetAxis("Horizontal") > 0)
+        if (horizontalInput > 0)
         {
             transform.localScale = new Vector3(1, 1, 1);
         }
-        else if (Input.GetAxis("Horizontal") < 0)
+        else if (horizontalInput < 0)
         {
             transform.localScale = new Vector3(-1, 1, 1);
         }
+
+        anim.SetBool("Walking", horizontalInput != 0);
     }
 
     void OnCollisionEnter2D(Collision2D collision) {
