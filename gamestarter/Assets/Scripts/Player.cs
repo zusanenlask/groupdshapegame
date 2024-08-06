@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     private bool grounded;
     private float horizontalInput;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
@@ -38,6 +38,10 @@ public class Player : MonoBehaviour
 
         anim.SetBool("Walking", horizontalInput != 0);
         anim.SetBool("Grounded", grounded);
+
+        if (transform.position.y < -10) {
+            Manager.instance.Restart();
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision) {
