@@ -37,6 +37,7 @@ public class Player : MonoBehaviour
         }
 
         anim.SetBool("Walking", horizontalInput != 0);
+        anim.SetBool("Grounded", grounded);
     }
 
     void OnCollisionEnter2D(Collision2D collision) {
