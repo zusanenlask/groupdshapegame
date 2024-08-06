@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
     {
         horizontalInput = Input.GetAxis("Horizontal");
         body.velocity = new Vector2(horizontalInput * speed,body.velocity.y);
-        if (Input.GetKeyDown(KeyCode.Space)) {
+        if (Input.GetKeyDown(KeyCode.Space) && grounded) {
             body.velocity = new Vector2(body.velocity.x, speed);
             grounded = false;
         }
