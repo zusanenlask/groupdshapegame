@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Manager : MonoBehaviour
 {
     public static Manager instance { get; private set; }
+    public GameObject winScreen;
     // Start is called before the first frame update
     void Awake()
     {
@@ -16,12 +17,19 @@ public class Manager : MonoBehaviour
         else if (instance != null && instance != this) {
             Destroy(gameObject);
         }
+        winScreen.SetActive(false);
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void Win() {
+        winScreen.SetActive(true);
+        Time.timeScale = 0;
     }
 
     public void Restart() {
