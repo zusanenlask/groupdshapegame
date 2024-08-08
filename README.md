@@ -12,7 +12,18 @@ Notes (08/07/24)
       - WIN if you find and successfully bring back her child (to "safety")
 
 Possibility:
+| __o__   ____o______ ___(child)____      |
 | __o__    __oo_____oo__    __o__   ____  |
 |      ____            __o__o__   __o__   |
 | _oo___   ____o__o____        ____o____  |
 |      __o__o__       __oo__o____o__      |
+
+
+
+General Task List:
+1) Design + Planning
+  a) Level Design
+  b) UI Design
+  c) Plan what assets necessary
+3) Assets
+4) Code
