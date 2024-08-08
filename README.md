@@ -27,3 +27,17 @@ General Task List:
   c) Plan what assets necessary
 3) Assets
 4) Code
+
+FIRST: UI that goes away after you press a key, tells you the story and what to avoid
+Start on the porch + Forest scene (gloomy) 
+Go into the house, have to dodge the eyes
+level design --> jump over eyes
+get to cage, don't have the key (and no lockpicking materials because video game logic) 
+key in separate room
+  - | __box__   ____o______ ___(key in box)____      |
+    | __o__    __oo_____oo__    __o__   ____  |
+    |      ____            __o__o__   __o__   |
+    | _oo___   ____o__o____        ____o____  |
+    |      __o__o__       __oo__o____o__      |
+
+get the key get the kids and get out.
