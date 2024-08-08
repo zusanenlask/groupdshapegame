@@ -41,3 +41,29 @@ key in separate room
     |      __o__o__       __oo__o____o__      |
 
 get the key get the kids and get out.
+
+
+Asset Planning:
+1) tutorial + story screen "you are detective x, you need to rescue the children of julia potts, who you just arrested (play other game for backstory) use wasd and space to move and avoid the eyes julia potts plucked from her victims.
+2) forest + porch assets (most likely will have to be a separate scene) --> figure this out later
+3) forest + porch background
+4) door
+5) house (front)
+6) floor tiles
+7) cage
+8) walls
+9) key
+10) detective sprites (including animations)
+11) child sprites (including animations)
+12) Exit + WIN UI
+13) Death UI
+
+
+Implementation:
+1) movement we have
+2) eyes = trigger
+3) UI elements we know
+4) platforms we know
+5) find out how to give the player a key : boxes on trigger change state to open, give player key
+6) player interacts with cage by touching it
+7) win + restart we can do
