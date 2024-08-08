@@ -10,3 +10,9 @@ Notes (08/07/24)
        - trying not to get jumpscared by the eyes?
        - eyes as obstacles
       - WIN if you find and successfully bring back her child (to "safety")
+
+Possibility:
+| __o__    __oo_____oo__    __o__   ____
+|      ____            __o__o__
+| _oo___   ____o__o____        ____o____
+|      __o__o__       __oo__o____o__
