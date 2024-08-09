@@ -57,7 +57,7 @@ Asset Planning:
 11) child sprites (including animations)
 12) Exit + WIN UI
 13) Death UI
-
+14) EYES
 
 Implementation:
 1) movement we have
@@ -67,3 +67,17 @@ Implementation:
 5) find out how to give the player a key : boxes on trigger change state to open, give player key
 6) player interacts with cage by touching it
 7) win + restart we can do
+
+
+
+SFX NOTES:
+- soundmanager object
+- soundmanager script + add as component
+- create instance + getset , create audio source (source = GetComponent<audiosource>
+- public void PlaySound(AudioClip _sound))
+  {
+    source.Playoneshot(_sound);
+  }
+
+- make parent to the soundmanager
+- bg music play on awake and loop
