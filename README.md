@@ -1,4 +1,19 @@
-# shapes2
+
+# tasks by person
+- suzanne
+  - assets (should be done by tomorrow hopefully) 
+- ibrahim
+    - level layouts, platform locations (essentially just the map)
+- winnie
+    - implement death upon contact with the eyes + win screen if necessary
+- daniel
+  - find out how to give the player a key : boxes on trigger change state to open, give player key
+
+
+tasks for later : sfx , ui elements , put in and implement assets
+
+
+
 
 Notes (08/07/24)
 - Suzanne can do art
@@ -60,7 +75,7 @@ Asset Planning:
 14) EYES
 
 Implementation:
-1) movement we have
+1) movement we have : finetune
 2) eyes = trigger
 3) UI elements we know
 4) platforms we know
