@@ -1,13 +1,16 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Win : MonoBehaviour
+
+
+public class Key : MonoBehaviour
 {
-    public GameObject winCanvas;
+ 
+    public static bool playerhaskey;
 
     private void Start()
     {
-        winCanvas.SetActive(false);
+       playerhaskey=false;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -17,14 +20,18 @@ public class Win : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("Player Detected!"); // This will confirm the player tag detection
-            if (Key.haskey()){
-                winCanvas.SetActive(true);
-            }
+            playerhaskey = true;
         }
     }
 
-    public void RestartGame()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    public static bool haskey(){
+        if (playerhaskey)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }
